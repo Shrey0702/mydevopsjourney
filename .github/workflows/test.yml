@@ -1,0 +1,20 @@
+name: firstdevoops
+on: 
+  push
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: repository checkout
+        uses: actions/checkout@v4
+      - name: dependency
+        uses: actions/setup-dotnet@v4
+      - name: restore
+        run: dotnet restore
+      - name: test
+        run: dotnet test
+      - name: build
+        run: dotnet build
+      - name: publish
+        run: dotnet publish
+        
