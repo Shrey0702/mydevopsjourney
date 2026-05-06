@@ -10,11 +10,11 @@ jobs:
       - name: dependency
         uses: actions/setup-dotnet@v4
       - name: restore
-        run: dotnet restore Sample/sample.csproj
+        run: dotnet restore Sample/Sample.csproj
       - name: test
-        run: dotnet test Sample/sample.csproj
+        run: dotnet test Sample/Sample.csproj
       - name: build
-        run: dotnet build Sample/sample.csproj
+        run: dotnet build Sample/Sample.csproj
       - name: publish
-        run: dotnet publish Sample/sample.csproj
+        run: dotnet publish Sample/Sample.csproj
         
