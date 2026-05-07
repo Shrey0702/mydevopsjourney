@@ -21,7 +21,7 @@ jobs:
         run: |
           ls -la
           pwd 
-          cd Sample
+          cd output
           ls -la
           pwd
       - name: upload artifact
