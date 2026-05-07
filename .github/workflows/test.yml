@@ -17,6 +17,13 @@ jobs:
         run: dotnet build Sample/Sample.csproj
       - name: publish
         run: dotnet publish Sample/Sample.csproj -c Release -o output
+      - name: check
+        run: |
+          ls -la
+          pwd 
+          cd Sample
+          ls -la
+          pwd
       - name: upload artifact
         uses: actions/upload-artifact@v4
         with:
